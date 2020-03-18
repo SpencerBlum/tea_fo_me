@@ -1,0 +1,12 @@
+<h1>Edit Yo Tea</h1>
+<br>
+<br>
+
+<%= form_for(@tea) do |f|%>
+<%=f.label :name%>
+<%=f.text_field :name%><br><br>
+<%=f.label :price%>
+<%=f.text_field :price%><br><br>
+<%= collection_select :tea_ingredident, :ingredient_id, Ingredient.all, :id, :name%><br><br>
+<%=f.submit%>
+<%end%>

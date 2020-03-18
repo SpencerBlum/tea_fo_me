@@ -1,0 +1,12 @@
+
+
+<h1> Dope Ass Teas</h1>
+<ul>
+<%@teas.each do |tea|%>
+<li>
+<%= link_to tea.name , tea_path(tea) %>
+</li> <br>
+<% end %>
+</ul>
+
+<%= link_to "Create Yo Tea Here!", new_tea_path %>

@@ -1,0 +1,9 @@
+
+<h1>Yo Tea</h1>
+
+
+<h3>Tea Blend: <%=@tea.name%> </h3> 
+<h3>Tea Price: <%=@tea.price%> </h3>
+
+<%= link_to "Delete", tea_path(@tea), method: :delete %> <br> <br>
+<%= link_to "View All Yo Teas", teas_path %>
